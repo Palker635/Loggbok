@@ -17,12 +17,15 @@ public class Loggbok {
     public String getFilename() {
         return filename;
     }
+
     public void setFilename(String filename) {
         this.filename = filename;
     }
+
     public String getTime() {
         return time;
     }
+
     public String getText() {
         return text;
     }
@@ -30,15 +33,19 @@ public class Loggbok {
     public void setText(String text) {
         this.text = text;
     }
+
     public void setTime(String time) {
         this.time = time;
     }
+
     public String getLog() {
         return log;
     }
+
     public void setLog(String log) {
         this.log = log;
     }
+
     private void CharStreamExample() throws IOException {
 
         PrintWriter out = null;
