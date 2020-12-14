@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.Date;
 
 public class Loggbok {
     private String filename;
@@ -7,12 +8,20 @@ public class Loggbok {
     private String text;
     private String textFile = "data.txt";
     private String data[];
+    public Date TimeEntry;
 
     public Loggbok(String filename, String time, String log) {
         this.filename = filename;
         this.time = time;
         this.log = log;
     }
+
+    public java.util.Date getTimeEntry() {
+       TimeEntry = java.util.Calendar.getInstance().getTime();
+        System.out.println(TimeEntry);
+        return TimeEntry;
+    }
+
 
     public String getFilename() {
         return filename;
